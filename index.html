@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GAME OVER</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div class="hero">
+      <div class="navbar">
+          <img src="images/game.png" class="logo">
+          <button type="button"><a href="about_us.html">About Us</a></button>
+      </div>
+      <div class="content">
+          <small>Created By The Team:</small>
+          <h1>GAME OVER </h1>
+          <button><a href="about_us.html">Our Team</a></button>
+      </div>
+      <div class="trailer">
+        <video width="400px" height="400px" controls autoplay>
+          <source src="images/trailer.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="full">
+        <button class="q"><a href="">Watch full version</a></button>        
+      </div>
+      <div class="bubbles">
+        <img src="images/bubble.png">
+        <img src="images/bubble.png">
+        <img src="images/bubble.png">
+        <img src="images/bubble.png">
+        <img src="images/bubble.png">
+        <img src="images/bubble.png">
+        <img src="images/bubble.png">
+      </div>
+      <section>
+        <div class="wave" id="wave1" style="--i:1;"></div>
+        <div class="wave" id="wave2" style="--i:2;"></div>
+        <div class="wave" id="wave3" style="--i:3;"></div>
+        <div class="wave" id="wave4" style="--i:4;"></div>
+      </section>
+      <div class="sec">
+        <h2>Water Cycle(Or Something Else).......</h2>
+        <iframe width="1349" height="512" src="https://www.youtube.com/embed/sQoiM7i5Nqc" title="Responsive Personal Portfolio Website using HTML CSS &amp; Javascript" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, totam atque amet autem nostrum unde 
+          doloribus deserunt rerum deleniti repellat dicta error beatae quos. Mollitia fugiat
+          odio eligendi exercitationem rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Adipisci error aliquid iure possimus blanditiis cum quam atque eaque accusantium dolorum?
+          Assumenda temporibus aliquid expedita saepe asperiores optio, commodi quia modi?<br><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, totam atque amet autem nostrum unde 
+          doloribus deserunt rerum deleniti repellat dicta error beatae quos. Mollitia fugiat
+          odio eligendi exercitationem rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Adipisci error aliquid iure possimus blanditiis cum quam atque eaque accusantium dolorum?
+          </p>
+          <button class="q"><a href="quiz.html">Take A Quiz</a></button>
+      </div>
+    </div>
+    <script>
+      let wave1 = document.getElementById('wave1');
+      let wave2 = document.getElementById('wave2');
+      let wave3 = document.getElementById('wave3');
+      let wave4 = document.getElementById('wave4');
+      window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
+        wave2.style.backgroundPositionX = 300 + value * -4 + 'px';
+        wave3.style.backgroundPositionX = 200 + value * 2 + 'px';
+        wave4.style.backgroundPositionX = 100 + value * -2 + 'px';
+      })
+    </script>
+  </body>
+</html>
